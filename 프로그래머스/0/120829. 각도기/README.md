@@ -1,10 +1,10 @@
 # [level 0] 각도기 - 120829 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120829) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120829?language=c) 
 
 ### 성능 요약
 
-메모리: 81.1 MB, 시간: 0.03 ms
+메모리: 3.7 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 04월 16일 22:42:13
+2025년 05월 28일 23:33:01
 
 ### 문제 설명
 
