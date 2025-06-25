@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Tax_calculate {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("근로소득을 입력하시오 : ");
+        int salary = sc.nextInt();
+        int Tax = 0;
+        if (salary > 8000) {
+            Tax = salary * (40 / 100);
+        } else if (salary > 4000) {
+            Tax = salary * (25 / 100);
+        } else if (salary > 2000) {
+            Tax = salary * (15 / 100);
+        } else Tax = salary * (5 / 100);
+        System.out.print("소득세 : " + Tax);
+    }
+}
