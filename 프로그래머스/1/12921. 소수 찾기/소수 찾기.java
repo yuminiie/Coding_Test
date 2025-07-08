@@ -1,21 +1,21 @@
 class Solution {
     public int solution(int n) {
-        boolean[] isNotPrime = new boolean[n + 1];
+        boolean[] PrimeX = new boolean[n + 1];
 
-        isNotPrime[0] = true;
-        isNotPrime[1] = true;
+        PrimeX[0] = true;
+        PrimeX[1] = true;
 
         for (int i = 2; i * i <= n; i++) {
-            if (!isNotPrime[i]) {
+            if (!PrimeX[i]) {
                 for (int j = i * i; j <= n; j += i) {
-                    isNotPrime[j] = true;
+                    PrimeX[j] = true;
                 }
             }
         }
 
         int count = 0;
         for (int i = 2; i <= n; i++) {
-            if (!isNotPrime[i]) count++;
+            if (!PrimeX[i]) count++;
         }
 
         return count;
