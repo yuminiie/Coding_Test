@@ -1,6 +1,6 @@
 SELECT BOOK_ID, AUTHOR_NAME, 
-    DATE_FORMAT(PUBLISHED_DATE, '%Y%-%m%-%d') as PUBLISHED_DATE
+    TO_CHAR(PUBLISHED_DATE, 'YYYY-MM-DD') as PUBLISHED_DATE
     FROM BOOK B
         JOIN AUTHOR A
-            WHERE B.AUTHOR_ID = A.AUTHOR_ID
-                and CATEGORY = '경제' order by PUBLISHED_DATE;
+            ON B.AUTHOR_ID = A.AUTHOR_ID
+                WHERE CATEGORY = '경제' order by PUBLISHED_DATE;
