@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Dollor {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("원화를 입력하세요 : ");
+        double won = sc.nextInt();
+        double dollor = won/1260;
+        System.out.printf("%d원은 $%.2f입니다.",(int)won, dollor);
+    }
+}
