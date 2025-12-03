@@ -15,6 +15,7 @@ public class ForTest_6 {
                 cnt++;
             }
         }
+
         System.out.printf("3과 5의 배수의 개수: %d", cnt);
 
     }
